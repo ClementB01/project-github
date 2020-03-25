@@ -13,12 +13,17 @@ import retrofit2.http.Query
 interface UserApi {
 
     @GET(GET_ALL_GITHUBUSER_PATH)
-    suspend fun getAllUsers(): Response<List<GitHubUser>>
+    suspend fun getListUsers(): Response<List<GitHubUser>>
 
     @GET(GET_USER_DETAILS)
     suspend fun getUserDetails(
         @Path("username") username: String
     ): Response<GitHubUser>
+
+    @GET(GET_ALL_GITHUBUSER_PATH)
+    suspend fun getAllUser(
+        @Query("since") since: Int
+    ): Response<List<GitHubUser>>
 
 
     companion object {

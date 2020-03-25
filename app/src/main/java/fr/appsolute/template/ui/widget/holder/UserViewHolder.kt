@@ -21,8 +21,8 @@ class UserViewHolder private constructor(itemView: View) : RecyclerView.ViewHold
     fun bind(model: GitHubUser, onClick: OnUserClickListener) {
         itemView.apply {
             this.setOnClickListener { onClick(it, model) }
-            this.holder_user_full_name.text = model.login
-            this.holder_user_location.text = model.url
+            this.holder_user_login.text = model.login
+            this.holder_user_type.text = "Compte de type : " + model.type
             Glide.with(this)
                 .load(model.avatar_url)
                 .into(this.holder_user_avatar)

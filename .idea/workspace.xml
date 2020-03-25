@@ -6,12 +6,12 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0dd1cc8-03c7-4480-b855-8d9742984788" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserDetailsFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_details.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/datasource/UserDataSource.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,18 +22,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/GitHubUserApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/GitHubUserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/GitHubUserAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/GitHubUserListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/GitHubUserViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/GitHubUserViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_githubuser_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/holder_githubuser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,12 +56,24 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/datasource/UserDataSource.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#58#378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+            <state relative-caret-position="316">
+              <caret line="62" column="78" selection-start-line="62" selection-start-column="78" selection-end-line="62" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -71,20 +81,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="105">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <element signature="e#44#308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="e#52#209#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserDetailsFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
-              <folding>
-                <element signature="e#44#683#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -92,8 +114,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+            <state relative-caret-position="267">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#1649#1666#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.0-rc03/a66187c0b4c257b562a1bb2b5eae287e4b0c2233/fragment-1.2.0-rc03-sources.jar!/androidx/fragment/app/Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="2690" selection-start-line="2690" selection-end-line="2690" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.2.0-rc03/6dcd7f31093b360c4a8bced748159e6fd237ba52/lifecycle-livedata-core-2.2.0-rc03-sources.jar!/androidx/lifecycle/LiveData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="154" selection-start-line="154" selection-end-line="154" />
             </state>
           </provider>
         </entry>
@@ -137,32 +180,32 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/GitHubUserApi.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/GitHubUserRepository.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserDetailsFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/datasource/UserDataSource.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1037" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="883" />
-    <option name="height" value="983" />
+    <option name="width" value="992" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -173,11 +216,6 @@
             <path>
               <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -200,15 +238,6 @@
               <item name="template" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="networking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="template" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
@@ -231,6 +260,14 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="template" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="template" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="fragment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,19 +281,10 @@
             <path>
               <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="navigation" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="template" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="holder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project Template" type="1abcf292:AndroidViewProjectNode" />
@@ -267,7 +295,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,6 +303,9 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -391,11 +422,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="983" extended-state="6" />
+    <frame x="0" y="23" width="992" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16347177" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3263158" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -403,41 +434,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3295964" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3295964" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32996634" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.22446689" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6673684" weight="0.3295964" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.25336322" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50210524" side_tool="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32996634" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32996634" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32996634" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.3564257" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16347177" />
-      <window_info id="Structure" order="1" side_tool="true" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Build Variants" order="6" side_tool="true" />
-      <window_info id="Resources Explorer" order="7" />
-      <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="0" />
-      <window_info anchor="bottom" id="TODO" order="1" weight="0.32996634" />
-      <window_info anchor="bottom" id="Logcat" order="2" weight="0.32996634" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.22446689" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49789473" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32996634" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -446,45 +450,30 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" weight="0.3564257" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/activity/MainActivity.kt</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt</url>
+          <line>57</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt</url>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt</url>
-          <line>18</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/HttpClientManager.kt</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-field">
-          <url>file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt</url>
-          <line>24</line>
-          <properties myFieldName="GET_ALL_GITHUBUSER_PATH" myClassName="fr.appsolute.template.data.networking.api.UserApi.Companion" />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -514,20 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/model/GitHubUser.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/CallBack.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -537,27 +512,63 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/HttpClientManager.kt">
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/fr/appsolute/template/data/repository/UserRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#47#264#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.2/ec56f8ab85c3a275dc74457902787ff8294b1978/kotlinx-coroutines-core-1.3.2-sources.jar!/commonMain/Dispatched.kt">
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/fr/appsolute/template/ui/viewmodel/UserViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="79">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml">
+      <provider editor-type-id="nav-designer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_details.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserDetailsFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -571,104 +582,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_list.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="163">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/holder_user.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/HttpClientManager.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/fr/appsolute/template/data/repository/UserRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#42#346#0" expanded="true" />
+            <element signature="e#47#264#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/fr/appsolute/template/ui/viewmodel/UserViewModel.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/model/GitHubUser.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="570">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/CallBack.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="75">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.2/ec56f8ab85c3a275dc74457902787ff8294b1978/kotlinx-coroutines-core-1.3.2-sources.jar!/jvmMain/scheduling/CoroutineScheduler.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        <state relative-caret-position="239">
+          <caret line="725" selection-start-line="725" selection-end-line="725" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core-ktx/2.2.0-rc03/7aa8d50b21a293f7a525ec84869c421a963b0188/lifecycle-livedata-core-ktx-2.2.0-rc03-sources.jar!/androidx/lifecycle/LiveData.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="409">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user_details.xml">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-ktx/2.2.0-rc03/3bc5992b0bb49e2d7ce92d34c45e54e1795cc03b/lifecycle-viewmodel-ktx-2.2.0-rc03-sources.jar!/androidx/lifecycle/ViewModelProvider.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml">
-      <provider editor-type-id="nav-designer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="195">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/widget/holder/UserViewHolder.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.0-rc03/a66187c0b4c257b562a1bb2b5eae287e4b0c2233/fragment-1.2.0-rc03-sources.jar!/androidx/fragment/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="276">
+          <caret line="2690" selection-start-line="2690" selection-end-line="2690" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.0-rc03/a66187c0b4c257b562a1bb2b5eae287e4b0c2233/fragment-1.2.0-rc03-sources.jar!/androidx/fragment/app/FragmentStateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.2.0-rc03/a66187c0b4c257b562a1bb2b5eae287e4b0c2233/fragment-1.2.0-rc03-sources.jar!/androidx/fragment/app/FragmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="2120" selection-start-line="2120" selection-end-line="2120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserListFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="267">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1649#1666#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/fragment/UserDetailsFragment.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.2.0-rc03/6dcd7f31093b360c4a8bced748159e6fd237ba52/lifecycle-livedata-core-2.2.0-rc03-sources.jar!/androidx/lifecycle/LiveData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+        <state relative-caret-position="179">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.2/ec56f8ab85c3a275dc74457902787ff8294b1978/kotlinx-coroutines-core-1.3.2-sources.jar!/commonMain/Dispatched.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="242" selection-start-line="242" selection-end-line="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.2.0-rc03/4f90404dd52d3162217bf329db5afb32d373ec63/lifecycle-viewmodel-2.2.0-rc03-sources.jar!/androidx/lifecycle/ViewModelProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/api/UserApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#44#683#0" expanded="true" />
+            <element signature="e#52#209#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/repository/UserRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="62" column="78" selection-start-line="62" selection-start-column="78" selection-end-line="62" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/data/networking/datasource/UserDataSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#58#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/viewmodel/UserViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="e#44#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/fr/appsolute/template/ui/adapter/UserAdapter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>

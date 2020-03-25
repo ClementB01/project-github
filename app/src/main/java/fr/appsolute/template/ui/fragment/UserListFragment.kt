@@ -1,6 +1,7 @@
 package fr.appsolute.template.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
+import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import fr.appsolute.template.R
 import fr.appsolute.template.data.model.GitHubUser
@@ -27,7 +29,7 @@ class UserListFragment: Fragment(), OnUserClickListener {
         super.onCreate(savedInstanceState)
         activity?.run {
             userViewModel = ViewModelProvider(this, UserViewModel).get()
-        } ?: throw IllegalStateException("Invalid Activty")
+        } ?: throw IllegalStateException("Invalid Activity")
     }
 
     override fun onCreateView(
@@ -44,13 +46,17 @@ class UserListFragment: Fragment(), OnUserClickListener {
             this.setTitle(R.string.app_name)
             this.setDisplayHomeAsUpEnabled(false)
         }
-        // We need to inject the OnCharacterClickListener in the constructor of the adapter
+        // We need to inject the OnUserClickListener in the constructor of the adapter
         userAdapter = UserAdapter(this)
         view.user_list_recycler_view.apply {
             adapter = userAdapter
         }
-        userViewModel.getAllUsers {
+        /*userViewModel.getAllUsers {
             userAdapter.submitList(it)
+        }*/
+        userViewModel.usersPagedList.observe(this) {
+            userAdapter.submitList(it)
+            Log.i("infoperso", it.toString())
         }
     }
 
